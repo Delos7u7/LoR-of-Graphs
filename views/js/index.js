@@ -4,16 +4,12 @@ document.getElementById('search').addEventListener('submit', function(event){
     event.preventDefault();
     const region = document.getElementById('region').value;
     const summonerName = document.getElementById('summoner').value;
-    let suummonerEndPoint = "https://"+region+".api.riotgames.com/lol/summoner/b4/summoners/by-name/"+summonerName;
-    fetch(suummonerEndPoint, {
-        method: "GET",
-        headers: {
-            "X-Riot-Token": apiKey
-        }
-    })
+    let suummonerEndPoint = "https://"+region+".api.riotgames.com/lol/summoner/v4/summoners/by-name/"+summonerName+"/?api_key="+apiKey;
+    fetch(suummonerEndPoint)
     .then(response => response.json())
     .then(data => {
-        console.log(JSON.stringify(data, null, 2));
+        console.log(data.puuid);
+        window.location.href = "/history";
     })
     .catch(error =>{
         console.error("Error en la solicitud de la API");

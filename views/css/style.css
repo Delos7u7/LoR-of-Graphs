@@ -33,7 +33,7 @@
     height: auto;
     list-style: none;
     display: flex;
-    justify-content: space-evenly;
+    gap: 50px;
     align-self: center;
     color: antiquewhite;
     font-family: 'Roboto Serif', serif;

@@ -4,8 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/estiloHistorial.css">
 </head>
 <body>
-    
+    <header>
+        <nav class="nav-section--container">
+            <div class="icon">
+                <h2>LoR</h2>
+            </div>
+            <ul class="navbar-list">
+                <li>Inicio</li>
+                <li>Tier List</li>
+                <li>Standard Meta</li>
+                <li>Eternal Meta</li>
+            </ul>
+            <div class="searcher">
+                <form id="search" class="search-form" action="">
+                    <div class="all-search-contain">
+                        <div class="region">
+                            <label class="region-title" for="region">Region</label>
+                            <select class="select-your-region" name="" id="region">
+                                <option value="br1">Br</option>
+                                <option value="eun1">EUN</option>
+                                <option value="euw1">EUW</option>
+                                <option value="jp1">Jp</option>
+                                <option value="kr">Kr</option>
+                                <option value="la1">LAN</option>
+                                <option value="la2">LAS</option>
+                                <option value="na1">NA</option>
+                                <option value="oc1">OC</option>
+                                <option value="ph2">Ph</option>
+                                <option value="ru">Ru</option>
+                                <option value="sg2">Sg</option>
+                                <option value="th2">Th</option>
+                                <option value="tr1">Tr</option>
+                                <option value="tw2">Tw</option>
+                                <option value="vn2">Vn</option>
+                            </select>
+                        </div>
+                        <div class="summoner-name">
+                            <label class="summoner" for="summoner">Search</label>
+                            <input id="summoner" class="input-searh--summoner" type="text" placeholder="Summoner name">
+                        </div>
+
+                        <div class="search-button">
+                            <button class="button-go" type="submit">GO</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-section--container">  
+        <div class="history-container">
+            <div class="name-summoner-image">
+                <div class="background-image--summoner">
+                    <span class="icon-image--summoner"></span>
+                    <h2 class="name-user-summoner">Delos7u7</h2>
+                    <p class="region-summoner">(LAN)</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
 </body>
 </html>

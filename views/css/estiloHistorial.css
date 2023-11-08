@@ -1,0 +1,101 @@
+:root {
+    /* Variables de color */
+    --Primary-purple: #6200EE;
+    --Secondary-purple: #3700B3;
+    --Button-purple: #BB86FC;
+
+    --Font-family: 'Roboto Serif', serif;
+}
+
+
+.main-section--container {
+    width: 100%;
+    height: 1300px;
+    display: flex;
+    justify-content: center;
+    background-image: url('https://dd.b.pvp.net/latest/set6/en_us/img/cards/06NX031-full.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.history-container {
+    width: 70%;
+    height: 100vh;
+    background-color: #6200EE;
+    display: flex;
+    flex-direction: column; /* Cambia a dirección de columna */
+    align-items: center; /* Centra los elementos verticalmente */
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.5), 10px 0 10px rgba(0, 0, 0, 0.5);
+    margin-top: 150px;
+}
+
+.name-summoner-image {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.background-image--summoner {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    background-image: url('https://dd.b.pvp.net/latest/set6/en_us/img/cards/06NX012-full.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-direction: column;
+    align-items: center;
+    color: #fff; /* Color del texto */
+    text-shadow:
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+}
+.background-image--summoner .icon-image--summoner {
+    margin-top: 20px;
+}
+
+.background-image--summoner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); /* Ajusta el color y la opacidad */
+    z-index: 1; /* Asegura que la capa esté por encima de la imagen de fondo */
+}
+
+.icon-image--summoner {
+    width: 100px;
+    height: 80px;
+    display: block;
+    position: relative;
+    background-image: url('http://ddragon.leagueoflegends.com/cdn/13.22.1/img/profileicon/4532.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+    padding-top: 20px;
+}
+
+.name-user-summoner {
+    font-size: 34px;
+    line-height: 36px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    position: relative;
+    z-index: 2;
+}
+
+.region-summoner {
+    font-size: 34px;
+    line-height: 36px;
+    position: relative;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
